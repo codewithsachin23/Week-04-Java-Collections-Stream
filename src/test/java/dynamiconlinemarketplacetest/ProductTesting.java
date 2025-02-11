@@ -1,7 +1,7 @@
 package dynamiconlinemarketplacetest;
 
 import org.day01.problemstatement.javagenerics.dynamiconlinemarketplace.*;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ProductTesting{
