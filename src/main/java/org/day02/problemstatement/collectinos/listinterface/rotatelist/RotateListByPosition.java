@@ -4,19 +4,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class RotateListByPosition {
-    public static List<Integer> rotateList(List<Integer> list,int k){
-        ArrayList<Integer> temp=new ArrayList<>();
-        int index=0;
-        for (int i=list.size()-1;i>=0;i--){
-            if(index<k){
-                temp.add(list.get(i));
-                index++;
-            }
+    public static List<Integer> rotateList(List<Integer> list,int k) {
+        if (list == null || list.isEmpty() || k <= 0) {
+            return list;
         }
-        for (int i=0;i<list.size()-k;i++){
-            temp.add(list.get(i));
-        }
-        System.out.println(temp);
+
+        int size = list.size();
+        k = k % size;
+
+
+        List<Integer> temp = new ArrayList<>();
+        temp.addAll(list.subList(size - k, size));
+        temp.addAll(list.subList(0, size - k));
+
+        System.out.println(temp); // For debugging
         return temp;
     }
 
