@@ -2,7 +2,7 @@ package org.day02.problemstatement.collectinos.queueinterface.hospitaltriagesyst
 
 public class Patient {
     String name;
-    int severity;
+    public int severity;
 
     public Patient(String name,int severity){
         this.name=name;
