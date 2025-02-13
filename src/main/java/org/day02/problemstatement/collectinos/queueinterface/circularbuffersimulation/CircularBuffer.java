@@ -37,5 +37,12 @@ public class CircularBuffer {
         }
         System.out.println("]");
     }
+    public int[] getCurrentBuffer() {
+        int[] currentBuffer = new int[size];
+        for (int i = 0; i < size; i++) {
+            currentBuffer[i] = buffer[(head + i) % buffer.length];
+        }
+        return currentBuffer;
+    }
 
 }
