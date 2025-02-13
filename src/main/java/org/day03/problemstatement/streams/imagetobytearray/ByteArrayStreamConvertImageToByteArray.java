@@ -5,8 +5,8 @@ import java.util.Arrays;
 
 public class ByteArrayStreamConvertImageToByteArray {
     public static void main(String[] args) {
-        String inputImagePath = "src/main/java/com/streams/bytearraystream/inputimage.jpg";
-        String outputImagePath = "src/main/java/com/streams/bytearraystream/writeimage.jpg";
+        String inputImagePath = "inputimage.jpg";
+        String outputImagePath = "writeimage.jpg";
 
         try {
             // Converting image to byte array using method
