@@ -2,7 +2,7 @@ package org.day02.problemstatement.collectinos.bankingsystem;
 
 import java.util.*;
 
-class BankingSystem {
+public class BankingSystem {
     private Map<String, BankAccount> accounts = new HashMap<>();
     private TreeMap<Double, String> balanceSortedAccounts = new TreeMap<>();
     private Queue<String> withdrawalQueue = new LinkedList<>();
