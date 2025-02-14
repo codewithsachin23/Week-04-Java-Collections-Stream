@@ -1,0 +1,4 @@
+Hello coders,
+this is checked exception file
+where be read a input using
+file reader and checkout exception.
