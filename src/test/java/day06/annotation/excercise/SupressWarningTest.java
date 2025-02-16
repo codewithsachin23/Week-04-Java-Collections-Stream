@@ -1,0 +1,25 @@
+package day06.annotation.excercise;
+
+
+import org.junit.jupiter.api.Test;
+
+import java.util.ArrayList;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+public class SupressWarningTest {
+
+    @Test // test method
+    @SuppressWarnings("unchecked") // suppress warning
+    public void testArrayListWithoutGenerics() {
+        ArrayList list = new ArrayList(); // create list
+        list.add("Apple");
+        list.add("Banana");
+        list.add("Cherry");
+
+        assertEquals(3, list.size()); // check size
+        assertEquals("Apple", list.get(0)); // check first element
+        assertEquals("Banana", list.get(1)); // check second element
+        assertEquals("Cherry", list.get(2)); // check third element
+    }
+}
