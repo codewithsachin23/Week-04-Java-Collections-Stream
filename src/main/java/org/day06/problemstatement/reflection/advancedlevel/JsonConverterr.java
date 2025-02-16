@@ -1,7 +1,6 @@
-package com.reflection.advancedlevel;
+package org.day06.problemstatement.reflection.advancedlevel;
 
 import java.lang.reflect.*;
-import java.util.*;
 
 class JsonConverter {
     public static String toJson(Object obj) {
@@ -45,7 +44,7 @@ class Persons {
     }
 }
 
-public class JsonConverterExample {
+public class JsonConverterr {
     public static void main(String[] args) {
         // Creating an object
         Persons persons = new Persons("Alice", 25);
